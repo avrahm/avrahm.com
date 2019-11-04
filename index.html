@@ -128,21 +128,21 @@
             <div class="row">
                 <div class="col-12 border-bottom">My Works</div>
             </div>
-            <div class="row">
-                <!-- <div class="col-3">
-                    <button class="btn btn-primary" onclick="showAll()">All</button>
-                </div> -->
+            <div class="d-flex flex-row">
                 <div class="col-3">
-                    <button onclick="toggleHide('video','design')">Photos</a>
+                    <a onclick="toggleShow('photo','video','design','all')">All</a>
                 </div>
                 <div class="col-3">
-                    <button onclick="toggleHide('photo','design')">Videos</a>
+                    <a onclick="toggleShow('photo','video','design')">Photos</a>
                 </div>
                 <div class="col-3">
-                    <button onclick="toggleHide('video','photo')">Design</a>
+                    <a onclick="toggleShow('video','photo','design')">Videos</a>
+                </div>
+                <div class="col-3">
+                    <a onclick="toggleShow('design','video','photo')">Design</a>
                 </div>
             </div>
-            <div class="d-flex flex-wrap">
+            <div class="d-flex flex-wrap" id="portfolio">
                 <div class="col-md-6 col-12" id="photo">
                     <div class="card card-body">
                         Photo 1
@@ -186,13 +186,13 @@
             </div>
             <div class="d-flex flex-wrap">
                 <div class="col-md-6 col-12" id="map">
-                        Map
+                    Map
                 </div>
                 <div class="col-md-6 col-12" id="contactinfo">
-                    
-                        Based in Miami, FL, USA
-                        <br>
-                        Email: contact@avrahm.com
+
+                    Based in Miami, FL, USA
+                    <br>
+                    Email: contact@avrahm.com
                 </div>
             </div>
         </div>

@@ -1,26 +1,59 @@
 // console.log('connected');
 
 
-function toggleHide(a,b,c) {
+function toggleShow(a,b,c,d) {
+
     let x = document.querySelectorAll(`#${a}`);
     let y = document.querySelectorAll(`#${b}`);
     let z = document.querySelectorAll(`#${c}`);
-    for (i = 0; i < x.length; i++){
-        if(x[i].style.display==="none"){
 
-            x[i].style.display=('block');
-        } else {
-
-            x[i].style.display=('none');
+    if(d=="all"){
+        for (let i = 0; i < x.length; i++){
+            x[i].classList.remove("hide");
         }
-    }
-    for (j = 0; j < y.length; j++){
-        if(y[j].style.display==="none"){
-
-            y[j].style.display=('block');
-        } else {
-
-            y[j].style.display=('none');
+        for (let j = 0; j < y.length; j++){
+            y[j].classList.remove("hide");
+            // console.log(y[j])
+        }
+        for (let k = 0; k < z.length; k++){
+            z[k].classList.remove("hide");
+            // console.log(z[k])
+        }
+    } else if(a=="photo"){
+        for (let i = 0; i < x.length; i++){
+            x[i].classList.remove("hide");
+        }
+        for (let j = 0; j < y.length; j++){
+            y[j].classList.add("hide");
+            // console.log(y[j])
+        }
+        for (let k = 0; k < z.length; k++){
+            z[k].classList.add("hide");
+            // console.log(z[k])
+        }
+    } else if(a=="video"){
+        for (let i = 0; i < x.length; i++){
+            x[i].classList.remove("hide");
+        }
+        for (let j = 0; j < y.length; j++){
+            y[j].classList.add("hide");
+            // console.log(y[j])
+        }
+        for (let k = 0; k < z.length; k++){
+            z[k].classList.add("hide");
+            // console.log(z[k])
+        }
+    } else if(a=="design"){
+        for (let i = 0; i < x.length; i++){
+            x[i].classList.remove("hide");
+        }
+        for (let j = 0; j < y.length; j++){
+            y[j].classList.add("hide");
+            // console.log(y[j])
+        }
+        for (let k = 0; k < z.length; k++){
+            z[k].classList.add("hide");
+            // console.log(z[k])
         }
     }
 }
