@@ -11,6 +11,8 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     modal.find('.modal-body input').val(recipient)
   })
 
+  
+
 function toggleShow(a,b,c,d) {
 
     let x = document.querySelectorAll(`#${a}`);

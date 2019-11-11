@@ -8,7 +8,7 @@ body {
 }
 
 nav {
-  height: 100px;
+  height: 90px;
   text-align: center;
   padding: 0 0 10px 0;
 }
@@ -55,6 +55,10 @@ header img {
   padding: 20px;
 }
 
+.anchor {
+  margin: -20px;
+}
+
 #map {
   border: 1px black solid;
   height: 60px;
@@ -68,8 +72,18 @@ header img {
   height: 150px;
   width: 150px;
 }
+/* 
+#portfolio img {
+  width: 200px;
+} */
 
 /* Bootstrap Changes */
 .mb-5, .my-5 {
     margin-bottom: 1.4rem!important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active {
+  color: black;
+  background-color: #fff; 
+  border-color: #ffffff;
 }
