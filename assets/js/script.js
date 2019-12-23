@@ -7,13 +7,14 @@ $("#exampleModal").on("show.bs.modal", function(event) {
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var image = button.data("image");
   var title = button.data("title");
-  
+  var description = button.data("description");
   var modal = $(this);
   modal.find(".modal-title").text(type.toUpperCase() + " - " + title);
 
   var modalImage = document.getElementById("modal-image");
   modalImage.innerHTML = "<img src='" + image + "' width='100%' >";
-  
+  var modalDescription = document.getElementById("modal-description");
+  modalDescription.innerHTML = description;
  
   // if (type === "photo") {
   //   modal.find(".modal-body input").val(type);
