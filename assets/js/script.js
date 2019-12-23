@@ -6,24 +6,22 @@ $("#exampleModal").on("show.bs.modal", function(event) {
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var image = button.data("image");
+  var title = button.data("title");
+  
   var modal = $(this);
-  if (type === "photo") {
-    modal.find(".modal-title").text("View the " + type);
-    // modal.find(".modal-body input").val(type);
-    // modal.find(".modal-body img").image(image)
+  modal.find(".modal-title").text(type.toUpperCase() + " - " + title);
 
-    var img = document.createElement("img");
-    img.src = image;
-    img.setAttribute('width', '100px')
-    var src = document.getElementById("src-image");
-    src.appendChild(img);
-  } else if (type === "video") {
-    modal.find(".modal-title").text("Play the " + type);
-    modal.find(".modal-body input").val(type);
-  } else if (type === "design") {
-    modal.find(".modal-title").text("Check out the " + type);
-    modal.find(".modal-body input").val(type);
-  }
+  var modalImage = document.getElementById("modal-image");
+  modalImage.innerHTML = "<img src='" + image + "' width='100%' >";
+  
+ 
+  // if (type === "photo") {
+  //   modal.find(".modal-body input").val(type);
+  // } else if (type === "video") {
+  //   modal.find(".modal-body input").val(type);
+  // } else if (type === "design") {
+  //   modal.find(".modal-body input").val(type);
+  // }
 });
 
 function toggleShow(a, b, c, d) {
