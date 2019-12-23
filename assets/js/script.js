@@ -8,21 +8,28 @@ $("#exampleModal").on("show.bs.modal", function(event) {
   var image = button.data("image");
   var title = button.data("title");
   var description = button.data("description");
+  var link = button.data("link");
   var modal = $(this);
   modal.find(".modal-title").text(type.toUpperCase() + " - " + title);
-
   var modalImage = document.getElementById("modal-image");
   modalImage.innerHTML = "<img src='" + image + "' width='100%' >";
   var modalDescription = document.getElementById("modal-description");
   modalDescription.innerHTML = description;
- 
-  // if (type === "photo") {
-  //   modal.find(".modal-body input").val(type);
-  // } else if (type === "video") {
-  //   modal.find(".modal-body input").val(type);
-  // } else if (type === "design") {
-  //   modal.find(".modal-body input").val(type);
-  // }
+  var modalLink = document.getElementById("modal-link");
+  if (link != undefined) {
+    modalLink.innerHTML =
+      "<a href='" +
+      link +
+      "'class='btn btn-primary' target='_blank'><i class='fas fa-external-link-alt'></i> View</a>";
+  }
+
+  if (type === "video") {
+    // modal.find(".modal-body input").val(type);
+    modalImage.innerHTML =
+      '<iframe width="100%" height="315" src="' +
+      link +
+      '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  }
 });
 
 function toggleShow(a, b, c, d) {
