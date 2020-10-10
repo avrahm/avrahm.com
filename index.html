@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <nav class="nav nav-pills sticky-top  flex-column flex-sm-row container-fluid shadow p-3 mb-5 bg-white rounded">
+    <!-- <nav class="nav nav-pills sticky-top  flex-column flex-sm-row container-fluid shadow p-3 mb-5 bg-white rounded">
         <a class="flex-sm-fill text-sm-center" href="#about">
             <i class="fas fa-portrait"></i><br>About</a>
         <a class="flex-sm-fill text-sm-center" href="#resume">
@@ -29,37 +29,55 @@
             <i class="fas fa-project-diagram"></i><br>Works</a>
         <a class="flex-sm-fill text-sm-center" href="#contact">
             <i class="fas fa-at"></i><br>Contact</a>
-    </nav>
+    </nav> -->
     <main>
-        <header class="container shadow p-3 mb-5 bg-white rounded">
-            <div class="row">
-                <div class="col-12"><br><br><br><br>
-                    <img src="./images/me.png" class=" mx-auto d-block img-thumbnail" width="200px"></div>
-                <div class="container">
+        <header class="container shadow  bg-white rounded">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <img src="./images/me.png" class="mx-auto d-block img-thumbnail" width="200px">
+                </div>
+                <div class="col-md-6">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <div class="row">
                             <div class="col-12">
-                                Avrahm Kleinholz<br>
-                                Web Designer
+                                <h2>Avrahm Kleinholz</h2>
+                                <p>Web Designer</p>
                             </div>
                         </div>
                         <div class="row">
                             <ul class="list-group list-group-horizontal">
-                                <li class="list-group-item"><a href="http://www.linkedin.com/in/avrahm"><i class="fab fa-linkedin"></i></a></li>
-                                <li class="list-group-item"><a href="http://twitter.com/avrahm"><i class="fab fa-twitter"></i></a></li>
-                                <li class="list-group-item"><a href="http://www.github.com/avrahm"><i class="fab fa-github"></i></a></li>
+                                <li class="list-group-item"><a href="http://www.github.com/avrahm"><i
+                                            class="fab fa-github"></i></a></li>
+                                <li class="list-group-item"><a href="http://www.linkedin.com/in/avrahm"><i
+                                            class="fab fa-linkedin"></i></a></li>
+                                <li class="list-group-item"><a href="http://twitter.com/avrahm"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li class="list-group-item"><a href="https://www.behance.net/avrahm"><i
+                                            class="fab fa-behance"></i></a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="row borders">
-                        <div class="col-6"><a href="https://drive.google.com/file/d/1kyzg2DqlKGfVUAWlMge-7SZAdmr5_gSA/view?usp=sharing">Download CV on <i class="fab fa-google-drive"></i></a></div>
-                        <div class="col-6"><a href="#contact">
-                            Contact Me <i class="fas fa-address-card"></i></a></div>
+                        <div class="col-6 border">
+                            <a
+                                href="https://drive.google.com/file/d/1kyzg2DqlKGfVUAWlMge-7SZAdmr5_gSA/view?usp=sharing">
+                                <i class="fab fa-google-drive"></i>
+                                <br>
+                                <span>View CV</span>
+                            </a>
+                        </div>
+                        <div class="col-6 border">
+                            <a href="mailto:me@avrahm.com">
+                                <i class="fas fa-paper-plane"></i>
+                                <br>
+                                <span>Email Me</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
-        <i class="anchor" id="about"></i>
+        <!-- <i class="anchor" id="about"></i>
         <div class="container shadow p-3 mb-5 bg-white rounded">
             <div class="row">
                 <div class="col-12 border-bottom">About Me</div>
@@ -101,8 +119,8 @@
                     “If you don't sacrifice for what you want, what you want becomes the sacrifice” <br/>- Anonymous
                 </div>
             </div>
-        </div>
-        <i class="anchor" id="resume"></i>
+        </div> -->
+        <!-- <i class="anchor" id="resume"></i>
         <div class="container shadow p-3 mb-5 bg-white rounded">
             <div class="row">
                 <div class="col-12 border-bottom">Resume</div>
@@ -166,56 +184,48 @@
                     </ul>
                 </div>
             </div>
+        </div> -->
+        <i class="anchor" id="skills"></i>
+        <div class="container shadow p-3 mb-5 bg-white rounded">
+            <div class="row">
+                <div class="col-12">Skills</div>
+                <div class="row skills-list text-sm-center">
+                    <div><img src="./images/icons8-html-5-240.png"><span>HTML</span></div>
+                    <div><img src="./images/icons8-javascript-240.png"><span>JavaScript</span></div>
+                    <div><img src="./images/icons8-mongodb-240.png"><span>MongoDB</span></div>
+                    <div><img src="./images/icons8-mysql-logo-250.png"><span>MySQL</span></div>
+                    <div><img src="./images/icons8-nodejs-240.png"><span>node.js</span></div>
+                    <div><img src="./images/icons8-npm-240.png"><span>npm</span></div>
+                    <div><img src="./images/icons8-php-logo-256.png"><span>PHP</span></div>
+                    <div><img src="./images/icons8-react-200.png"><span>React Web</span></div>
+                    <div><img src="./images/icons8-react-native-256.png"><span>React Native</span></div>
+                    <div><img src="./images/icon-expressjs.png"><span>Express JS</span></div>
+                    <div><img src="./images/icons8-css3-240.png"><span>CSS</span></div>
+                    <div><img src="./images/icons8-bootstrap-240.png"><span>Bootstrap</span></div>
+                </div>
+            </div>
         </div>
         <i class="anchor" id="works"></i>
         <div class="container shadow p-3 mb-5 bg-white rounded">
             <div class="row">
                 <div class="col-12 border-bottom">My Works</div>
             </div>
-            <div class="d-flex flex-row">
-                <div class="col-3">
-                    <a onclick="toggleShow('photo','video','design','all')">All</a>
-                </div>
-                <div class="col-3">
-                    <a onclick="toggleShow('photo','video','design')">Photos</a>
-                </div>
-                <div class="col-3">
-                    <a onclick="toggleShow('video','photo','design')">Videos</a>
-                </div>
-                <div class="col-3">
-                    <a onclick="toggleShow('design','video','photo')">Design</a>
-                </div>
-            </div>
             <i class="anchor" id="portfolio"></i>
-            <div class="d-flex flex-wrap">
-                <div class="card card-body col-sm-6 col-lg-4 col-12" id="photo">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-                        data-type="photo" data-link="https://www.sportsvybe.com/" data-title="SportsVybe Logo"
-                        data-content="Lorem epsom"
-                        data-description="This is the logo for SportsVybe created with Photoshop."
-                        data-image="./images/header-sports1024.png">
-                        <img src="./images/header-sports1024.png" class="img-fluid">
-                        <br>Photo - SportsVybe Logo
-                    </button>
-                </div>
-                <div class="card card-body col-sm-6 col-lg-4 col-12" id="design">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-title="SportsVybe Website" data-target="#exampleModal"
-                        data-link="https://www.sportsvybe.com/"  data-description="" data-image="./images/full_logo_blackvybe_whitebg.png" data-type="design">
-                        <img src="./images/full_logo_blackvybe_whitebg.png" class="img-fluid">
+            <div class="portfolio">
+                <div class="portfolio-card">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-title="SportsVybe Website"
+                        data-target="#exampleModal" data-link="https://www.sportsvybe.com/" data-description=""
+                        data-image="./images/full_logo_blackvybe_whitebg.png" data-type="design">
+                        <img src="./images/full_logo_blackvybe_whitebg.png">
                         <br>Design - SportsVybe Website
                     </button>
                 </div>
-                <div class="card card-body col-sm-6 col-lg-4 col-12" id="video">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-title="SportsVybe Promotion Video" data-link="https://www.youtube.com/embed/39pJf2mT3jA" data-description=""
-                        data-target="#exampleModal" data-type="video">
-                        <img src="./images/sportsvybe_video_screenshot.png" class="img-fluid">
-                        <br>Video - SportsVybe Promotion Video
-                    </button>
-                </div>
-                <div class="card card-body col-sm-6 col-lg-4 col-12" id="design">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-title="IronPong - Ironhack Canvas Game" data-link="http://www.avrahm.com/ironpong" data-description="Description: Type More info here <b>word</b>" data-image="./images/ironpong.png"
-                        data-target="#exampleModal" data-type="design">
-                        <img src="./images/ironpong.png" class="img-fluid">
+                <div class="portfolio-card">
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-title="IronPong - Ironhack Canvas Game" data-link="http://www.avrahm.com/ironpong"
+                        data-description="Description: Type More info here <b>word</b>"
+                        data-image="./images/ironpong.png" data-target="#exampleModal" data-type="design">
+                        <img src="./images/ironpong.png">
                         <br>Design - IronPong - Ironhack Canvas Game
                     </button>
                 </div>
@@ -224,11 +234,39 @@
         <i class="anchor" id="contact"></i>
         <div class="container shadow p-3 mb-5 bg-white rounded">
             <div class="row">
+
+                <div class="portfolio-card">
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-title="SportsVybe Promotion Video" data-link="https://www.youtube.com/embed/39pJf2mT3jA"
+                        data-description="" data-target="#exampleModal" data-type="video">
+                        <img src="./images/sportsvybe_video_screenshot.png">
+                        <span>Video - SportsVybe Promotion Video</span>
+                    </button>
+                </div>
+
+                <div class="portfolio-card">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                        data-type="photo" data-link="https://www.sportsvybe.com/" data-title="SportsVybe Logo"
+                        data-content="Lorem epsom"
+                        data-description="This is the logo for SportsVybe created with Photoshop."
+                        data-image="./images/header-sports1024.png">
+                        <img src="./images/header-sports1024.png">
+                        <span>Photo - SportsVybe Logo</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <i class="anchor" id="contact"></i>
+        <div class="container shadow p-3 mb-5 bg-white rounded">
+            <div class="row">
                 <div class="col-12 border-bottom">Contact Me</div>
             </div>
             <div class="d-flex flex-wrap">
                 <div class="col-md-6 col-12" id="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53933868802!2d-80.29967036071207!3d25.782390651017746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1581654299263!5m2!1sen!2sus" id="map" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53933868802!2d-80.29967036071207!3d25.782390651017746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1581654299263!5m2!1sen!2sus"
+                        id="map" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
                 <div class="col-md-6 col-12" id="contactinfo">
 
@@ -256,7 +294,8 @@
                 <div class="modal-body">
                     <div id="modal-image"></div>
                     <div id="modal-description"></div>
-                    <//div> <div class="modal-footer">
+                </div>
+                <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <div id="modal-link"></div>
                 </div>
@@ -268,13 +307,13 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
 
 
     <!-- Main JS -->

@@ -93,14 +93,9 @@ header img {
   white-space: nowrap;
 }
 
-.portfolio-card {
+.card {
   display: inline-block !important;
-  height: 200px;
-}
-
-.portfolio-card img {
-  max-width: 100px;
-}
+  width: 200px;overflow-wrap: normal;}
 
 /* Bootstrap Changes */
 .mb-5, .my-5 {
