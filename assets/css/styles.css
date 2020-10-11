@@ -1,20 +1,10 @@
 body {
   margin: 0;
-  /* background-image: url(/images/blue-sky.png); */
+  background-image: url(/images/blue-sky.png);
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
-
-/* nav {
-  height: 90px;
-  text-align: center;
-  padding: 0 0 10px 0;
-}
-
-nav i {
-  padding: 0 0 10px 0;
-} */
 
 main {
   margin: 0 20px;
@@ -38,8 +28,8 @@ a:hover {
 }
 
 header img {
-  border-radius: 50% !important;
-  margin-top: 20px !important;
+  border-radius: 10% !important;
+  margin-top: 40px !important;
 }
 
 #about {
