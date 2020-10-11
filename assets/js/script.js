@@ -10,7 +10,7 @@ $("#exampleModal").on("show.bs.modal", function(event) {
   var description = button.data("description");
   var link = button.data("link");
   var modal = $(this);
-  modal.find(".modal-title").text(type.toUpperCase() + " - " + title);
+  modal.find(".modal-title").text(title);
   var modalImage = document.getElementById("modal-image");
   modalImage.innerHTML = "<img src='" + image + "' width='100%' >";
   var modalDescription = document.getElementById("modal-description");
@@ -20,7 +20,7 @@ $("#exampleModal").on("show.bs.modal", function(event) {
     modalLink.innerHTML =
       "<a href='" +
       link +
-      "'class='btn btn-primary' target='_blank'><i class='fas fa-external-link-alt'></i> View</a>";
+      "'class='btn btn-primary' target='_blank'><i class='fas fa-external-link-alt'></i> Go</a>";
   }
 
   if (type === "video") {
@@ -30,6 +30,14 @@ $("#exampleModal").on("show.bs.modal", function(event) {
       link +
       '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
   }
+  if (type === "design") {
+    // modal.find(".modal-body input").val(type);
+    modalImage.innerHTML =
+      '<iframe width="100%" height="800px" src="' +
+      link +
+      '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  }
+
 });
 
 function toggleShow(a, b, c, d) {
