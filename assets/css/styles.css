@@ -1,26 +1,48 @@
+@font-face {
+  font-family: "firaSans";
+  src: url("../FiraSans-Light.ttf") format("truetype");
+}
+
 body {
   margin: 0;
-  background-image: url('/images/blue-sky.png');
+  /* background-image: url('/images/blue-sky.png');
   background-size: cover;
   background-repeat: no-repeat;
-  overflow-x: hidden;
+  overflow-x: hidden; */
+  font-family: firaSans;
+  background-color: #051622;
+  color: #DEB992;
 }
 
 main {
   margin: 0 20px;
 }
 
-main div {
+a {
+  color: #DEB992;
+}
+
+.title {
+  font-size: 32px;
+  color: #1BA098;
+}
+
+main  div {
   padding: 10px 0;
 }
 
-.list-group {
-  font-size: 1.5em;
+.social img {
+  width: 40px;
+  padding: 5px;
+  justify-content: space-between;
 }
 
 header {
   text-align: center;
-  margin: -40px 0 0 0;
+}
+
+footer {
+  color: #DEB992
 }
 
 a:hover {
@@ -29,7 +51,6 @@ a:hover {
 
 header img {
   border-radius: 10% !important;
-  margin-top: 40px !important;
 }
 
 #about {
@@ -53,14 +74,6 @@ header img {
 
 .anchor {
   margin: -20px;
-}
-
-.map {
-  border: 1px black solid;
-  height: 60px;
-  width: 100%;
-  padding: 40px 0;
-  text-align: center;
 }
 
 .skills-list {
@@ -95,6 +108,12 @@ header img {
   height: 200px;
 }
 
+.portfolio-card > button {
+  flex-direction: column;
+  align-content: space-around;
+  color: #DEB992;
+}
+
 .portfolio-card img {
   max-width: 200px;
 }
@@ -109,8 +128,13 @@ header img {
     margin-bottom: 1.4rem!important;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active {
-  color: black;
-  background-color: #fff; 
-  border-color: #ffffff;
+.btn-primary, .btn-primary:hover, .btn-primary:active, a:hover {
+  color: #1BA098;
+  background-color: #343a40; 
+  border-color: #343a40;
+}
+
+.img-thumbnail {
+  background-color: #051622;
+  border: 2px solid #DEB992;  
 }

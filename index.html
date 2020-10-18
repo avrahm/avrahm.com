@@ -21,7 +21,7 @@
 
 <body>
     <main>
-        <header class="container shadow bg-white rounded">
+        <header class="container shadow p-3 mb-5 bg-dark rounded">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-md-6">
                     <img src="./images/me.png" class="img-thumbnail" width="200px">
@@ -30,21 +30,28 @@
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <div class="row">
                             <div class="col-12">
-                                <h2>Avrahm Kleinholz</h2>
+                                <h2 class="title">Avrahm Kleinholz</h2>
                                 <span>Web Designer</span>
                             </div>
                         </div>
-                        <div class="row">
-                            <ul class="list-group list-group-horizontal">
-                                <li class="list-group-item"><a href="http://www.github.com/avrahm"><i
-                                            class="fab fa-github"></i></a></li>
-                                <li class="list-group-item"><a href="http://www.linkedin.com/in/avrahm"><i
-                                            class="fab fa-linkedin"></i></a></li>
-                                <li class="list-group-item"><a href="http://twitter.com/avrahm"><i
-                                            class="fab fa-twitter"></i></a></li>
-                                <li class="list-group-item"><a href="https://www.behance.net/avrahm"><i
-                                            class="fab fa-behance"></i></a></li>
-                            </ul>
+                        <div class="d-flex flex-row social justify-content-between">
+                                <a href="http://www.github.com/avrahm">
+                                    <img src="./images/icons/iconfinder_github_1220319.png">
+                                </a>
+
+                                <a href="http://www.linkedin.com/in/avrahm">
+                                    <img
+                                        src="./images/icons/iconfinder_social_media_applications_14-linkedin_4102586.png">
+                                </a>
+
+                                <a href="http://twitter.com/avrahm">
+                                    <img
+                                        src="./images/icons/iconfinder_social_media_applications_6-twitter_4102580.png">
+                                </a>
+
+                                <a href="https://www.behance.net/avrahm">
+                                    <img src="./images/icons/iconfinder_behance__social__media_2986188.png">
+                                </a>
                         </div>
                     </div>
                     <div class="d-flex" id="contact">
@@ -59,23 +66,21 @@
                 </div>
             </div>
         </header>
-
-        <i class="anchor" id="skills"></i>
-        <div class="container shadow p-3 mb-5 bg-white rounded">
-            <div class="col-12 border-bottom">Skills</div>
+        <div class="container shadow p-3 mb-5 bg-dark rounded">
+            <div class="col-12 border-bottom title">Skills</div>
             <div class="row">
                 <div class="row skills-list text-sm-center">
                     <div><img src="./images/icons/icons8-html-5-240.png"><span>HTML</span></div>
                     <div><img src="./images/icons/icons8-css3-240.png"><span>CSS</span></div>
                     <div><img src="./images/icons/icons8-javascript-240.png"><span>JavaScript</span></div>
-                    <div><img src="./images/icons/icons8-php-logo-256.png"><span>PHP</span></div>
+                    <div><img src="./images/icons/icons8-php-logo-256-2.png"><span>PHP</span></div>
                     <div><img src="./images/icons/icons8-bootstrap-240.png"><span>Bootstrap</span></div>
-                    <div><img src="./images/icons/icons8-nodejs-240.png"><span>node.js</span></div>
+                    <div><img src="./images/icons/iconfinder_node_3069651.png"><span>node.js</span></div>
                     <div><img src="./images/icons/icons8-npm-240.png"><span>npm</span></div>
                     <div><img src="./images/icons/icons8-git-240.png"><span>Git</span></div>
 
                     <div><img src="./images/icons/icons8-react-200.png"><span>ReactJS Web</span></div>
-                    <div><img src="./images/icons/icons8-react-native-256.png"><span>React Native</span></div>
+                    <!-- <div><img src="./images/icons/icons8-react-native-256.png"><span>React Native</span></div> -->
                     <div><img src="./images/icons/icon-expressjs.png"><span>Express JS</span></div>
 
 
@@ -92,8 +97,8 @@
                 </div>
             </div>
         </div>
-        <div class="container shadow p-3 mb-5 bg-white rounded">
-            <div class="col-12 border-bottom">Web Designs</div>
+        <div class="container shadow p-3 mb-5 bg-dark rounded">
+            <div class="col-12 border-bottom title">Web Designs</div>
             <div class="portfolio">
                 <div class="portfolio-card">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
@@ -106,20 +111,20 @@
                 </div>
                 <div class="portfolio-card">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-                        data-type="design" data-title="IronPong - Canvas Game"
-                        data-link="https://ironpong.avrahm.com/" data-description=""
-                        data-image="./images/ironpong.png">
+                        data-type="design" data-title="IronPong - Canvas Game" data-link="https://ironpong.avrahm.com/"
+                        data-description="" data-image="./images/ironpong.png">
                         <img src="./images/portfolio/mac-computer-ironpong.png">
                         <span>IronPong - Canvas Game</span>
                     </button>
                 </div>
                 <div class="portfolio-card">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-                        data-type="design" data-title="Backflow Testers North Georgia, LLC"
-                        data-link="https://backflowtestersnorthgeorgia.netlify.app" data-description="http://www.backflowtestersnorthgeorgia.com/"
+                        data-type="design" data-title="Backflow Testers North GA, LLC"
+                        data-link="https://backflowtestersnorthga.com"
+                        data-description="Business Page for Backflow Testers North GA"
                         data-image="./images/backflow-testers-logo.png">
                         <img src="./images/portfolio/mac-computer-backflow-north-ga.png">
-                        <span>BackflowTestersNorthGeorgia.com</span>
+                        <span>BackflowTestersNorthGA.com</span>
                     </button>
                 </div>
                 <div class="portfolio-card">
@@ -140,8 +145,8 @@
                 </div>
             </div>
         </div>
-        <div class="container shadow p-3 mb-5 bg-white rounded">
-            <div class="col-12 border-bottom">Graphic Designs</div>
+        <div class="container shadow p-3 mb-5 bg-dark rounded">
+            <div class="col-12 border-bottom title">Graphic Designs</div>
             <div class="portfolio">
                 <div class="portfolio-card">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
@@ -162,7 +167,7 @@
                 </div>
                 <div class="portfolio-card">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-                        data-title="Backflow Testers North Georgia, LLC Logo" data-description=""
+                        data-title="Backflow Testers North GA, LLC Logo" data-description=""
                         data-image="./images/graphics/backflow-testers-logo.png" data-type="photo">
                         <img src="./images/graphics/backflow-testers-logo.png">
                         <span>Backflow Testers Logo</span>
@@ -171,8 +176,8 @@
                 <div class="portfolio-card">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
                         data-title="GitShirts Icon & Logo" data-description=""
-                        data-image="./images/graphics/gitshirts.com-logo.png" data-type="photo">
-                        <img src="./images/graphics/gitshirts.com-logo.png">
+                        data-image="./images/graphics/gitshirts-logo.png" data-type="photo">
+                        <img src="./images/graphics/gitshirts-logo.png">
                         <span>GitShirts Icon & Logo</span>
                     </button>
                 </div>
@@ -215,16 +220,16 @@
         </div>
     </main>
 
-    <div class="row" style="padding-bottom: 40px;">
-        <div class="container col-12 d-flex justify-content-center">Copyright © Avrahm Kleinholz</div>
-    </div>
+
+    <footer class="d-flex justify-content-center" style="margin-bottom: 3em;">Copyright © Avrahm Kleinholz</footer>
+
 
 
     <!-- Modal Contents -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
+            <div class="modal-content bg-dark">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">New message</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
