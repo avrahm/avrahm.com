@@ -1,6 +1,6 @@
 // console.log('connected');
 
-$("#exampleModal").on("show.bs.modal", function(event) {
+$("#exampleModal").on("show.bs.modal", function (event) {
   var button = $(event.relatedTarget); // Button that triggered the modal
   var type = button.data("type"); // Extract info from data-* attributes
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
@@ -37,7 +37,6 @@ $("#exampleModal").on("show.bs.modal", function(event) {
       link +
       '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
   }
-
 });
 
 function toggleShow(a, b, c, d) {
@@ -95,3 +94,22 @@ function toggleShow(a, b, c, d) {
     }
   }
 }
+
+let skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "PHP",
+  "Bootstrap",
+  "node.js",
+  "npm",
+  "Git",
+  "ReactJS",
+  "ExpressJS",
+  "MongoDB",
+  "MySQL",
+  "Photoshop",
+  "PhpStorm",
+  "Visual Studio Code",
+  "Github",
+];
