@@ -20,7 +20,7 @@ $("#exampleModal").on("show.bs.modal", function (event) {
     modalLink.innerHTML =
       "<a href='" +
       link +
-      "'class='btn btn-primary' target='_blank'><i class='fas fa-external-link-alt'></i> Go</a>";
+      "'class='btn btn-info' target='_blank'><i class='fas fa-external-link-alt'></i> Go</a>";
   }
 
   if (type === "video") {
