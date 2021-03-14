@@ -12,7 +12,7 @@ $("#exampleModal").on("show.bs.modal", function (event) {
   var modal = $(this);
   modal.find(".modal-title").text(title);
   var modalImage = document.getElementById("modal-image");
-  modalImage.innerHTML = "<img src='" + image + "' width='100%' >";
+  modalImage.innerHTML = "<img src='" + image + "' class='modal-img' >";
   var modalDescription = document.getElementById("modal-description");
   modalDescription.innerHTML = description;
   var modalLink = document.getElementById("modal-link");

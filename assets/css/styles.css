@@ -116,6 +116,7 @@ header img {
 
 .portfolio-card img {
   max-width: 200px;
+  max-height: 200px;
 }
 
 .portfolio-card span {
@@ -137,4 +138,13 @@ header img {
 .img-thumbnail {
   background-color: #051622;
   border: 2px solid #DEB992;  
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.modal-img {
+  width: 80%;
+  max-width: 600px;
 }
